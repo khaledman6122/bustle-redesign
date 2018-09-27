@@ -1,0 +1,215 @@
+
+/*
+@media tv and (max-width:1200px)     TV
+@media screen and (max-width:800px)  SCREEN
+@media screen and (max-width:768px)  TABLETS
+@media screen and (max-width:480px)  MOBILES
+
+
+*/
+
+@media screen and (max-width:480px){
+    body{width: 100%;margin: 0;padding: 0;overflow-x: hidden}
+   .mainNav{
+
+      &__hamburger{
+         margin-left: 5%;
+      }
+      &__bustleLink{
+          margin-left:25%;
+         margin-right:14%;
+         img{}
+     }
+
+     &__socailMedia{
+         display: none;
+      }
+    
+      &__splitLine{display: none;}
+
+
+      &__pageFunctions{
+         &__a{margin-right:6px;height:auto;cursor: pointer;}
+      }
+
+   }   
+
+
+    
+    
+    
+    
+    
+#searchBar{
+    &__img{margin-left:5%;}
+    &__input{width:75%;}
+}
+    
+    
+     
+    
+.sideNav{
+      width: 100%;
+
+      &__part1{}
+
+      &__part2{
+          &__links{padding: 0;margin: 0; }
+         &__socailMedia{
+            a{
+               margin-left: 4%;
+                &:nth-child(1){margin-left:24%;}
+            }
+            img{}
+         }
+         &__splitLineH{}
+          &__socailMedia{
+             a{}
+             img{}
+          }
+      }
+      
+}
+
+ 
+.slider,.slider2{
+   display: table; margin-top:20px; 
+   &__slide{
+      width: 98%;
+       height: auto;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 50px;         
+     
+       &__a{
+         margin: 0;
+         padding: 0;
+         &__image{
+            width:100%; height: auto; 
+          }
+          &__paragraph{width:92%;height: auto;margin-left:10px;  }
+          
+      }
+
+   }
+
+}
+
+
+.sliderButton,.sliderButton2{display: none;}
+
+
+
+     
+    
+    .mainSlide{
+                width: 100%;margin-bottom: 300px;margin-top: 150px;
+        transform: scale(1);
+        &__a{
+            
+            &__image{
+                width:100%;height:auto;
+            }
+            
+            &__paragraph{
+                padding: 0;margin: 0;margin-left: -13%;margin-top: -5%;
+                padding-bottom: 5%;padding-top:5%;font-size: 16px;
+                 width: 83%; height: auto;
+                &--black{display: none;}
+            }
+            &__paragraph2{display: none;}
+        }
+        
+    }    
+    
+    
+    
+.subSlide{
+         width: 100%;height: auto; margin-bottom: 30px;
+        transform: scale(1);
+        &:hover{ transform: scale(1); 
+        border:0px ; }
+    &__a{
+         display: block;  padding: 0; margin: 0;
+        &__img{width:99%;height: auto;display:block;
+            &:hover{transform: scale(1.07);transition: transform 1s ease-in-out}
+        }
+        
+        &__div{
+            width: 97.5%;display:block;height: auto;
+            
+                     &__p{
+                     &--first{margin-top: 15px;}
+
+                    &--second{}
+
+                    &--third{}
+                    }
+            }
+    }
+}
+    
+     
+    
+    
+@mixin cccTo000{
+    filter:invert(60%);
+    &:hover{filter: invert(100%)}
+}
+ 
+.footer{
+    width: 100%; height: 640px;  
+    margin-top: 350px;
+    background-color: #000; 
+    display: block;
+    &__section{
+        //&::after{content: "";clear: both;display: table;}
+        &--social{
+            display: block; 
+            border-right: 0px ;
+              width:100%; height:auto; 
+            margin-bottom: 50px;
+            &__p{margin-left:36%;font-size: 25px;display:block;margin-bottom: 0px;}
+            &__a{
+                display: inline-block;
+                margin-top: 40px; 
+                margin-left:17%; 
+                &__img{
+                    width: 30px; height: auto;
+                    @include  cccTo000;
+                }
+              //  &__a:hover .footer__section--social__p{filter: invert(40%)}
+            }
+        }
+        
+          
+        &--projs{
+            display: block; 
+            border-right: 0px ;
+              width:100%; height:auto;  
+            &__p{margin-left:31%;font-size: 25px;display:block;}
+            &__a{
+                display: block;
+                margin-top: 30px; 
+                margin-left:29%; 
+                &__img{
+                    width:115px; height: auto;margin-left: 20px;
+                 @include  cccTo000;
+               }
+            }
+            } 
+         
+        
+         &--contacts{
+             width:100%; height:auto;  
+             color: #fff;letter-spacing: 1px;
+            &__h{  margin-top: 40px;text-align: center;margin-bottom: 30px;letter-spacing:1.7px;  }
+            &__p{ margin-left: 0px; display: block; ;text-align: center;}
+        }
+        
+    }
+    
+}
+     
+    
+}
